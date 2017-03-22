@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
 from django.shortcuts import render
 from .models import DadosPessoais
 
 def portfolio_exibir(request):
-	
+
 	pessoa = DadosPessoais.objects.all()
 	context = {'pessoa': pessoa}
 
